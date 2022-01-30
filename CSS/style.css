@@ -1,0 +1,82 @@
+h1{
+    padding: 3%;
+    text-align: center;
+    color: #5b3e64;
+    background-color: #fcebf1;
+}
+.skillList{
+    display: flex;
+    padding: 30px;
+}
+.flexContainer{
+    display: table;
+    width: 33%;
+    text-align: center;
+    margin: 3%;
+}
+.inline-block{
+    display: inline-block;
+    text-align: center;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23%;
+    padding: 1%;
+}
+.logo img{
+    max-width: 50px;
+    max-height: auto;
+}
+h3{
+    color: #3b1747;
+    text-align: center;
+    margin: 5%;
+
+}
+p{
+    color: #353535;
+    text-align: justify;
+}
+
+.workGrid{
+    display: grid;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 30px;
+    grid-template-areas:
+    "imgarea1 description1 description1"
+    "imgarea2 description2 description2"
+    "imgarea3 description3 description3";
+}
+.projectimg{
+    padding: 4%;
+    display: inline-block;
+    text-align: center;
+}
+.projectimg img{
+    max-width: 150px;
+    max-height: auto;
+}
+.projectimg.project1{
+    grid-area: imgarea1;
+}
+.projectimg.project2{
+    grid-area: imgarea2;
+}
+.projectimg.project3{
+    grid-area: imgarea3;
+}
+.description1{
+    grid-area: description1;
+}
+.description2{
+    grid-area: description2;
+}
+.description3{
+    grid-area: description3;
+}
